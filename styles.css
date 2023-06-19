@@ -19,7 +19,12 @@ dd {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-
+:root{
+  --gray-input: rgba(25, 24, 43, 0.25);
+  --red-glow: rgba(255, 97, 85, 0.5);
+  --dark-navy: #242742;
+  --white-text: #E7E7E7;
+}
 .main-container{
   display: flex;
   flex-direction: column;
@@ -36,12 +41,23 @@ h1{
 
 p{
   font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+ul{
+  margin-bottom: 2.5rem;
 }
 
 ul li{
+  margin: auto auto 0.625rem -0.5rem ;
+  list-style-image: url('assets/images/icon-list.svg');
   padding: 0.3rem;
-  margin-left: -0.5rem;
-  list-style-image: url(assets/images/icon-list.svg);
+}
+
+
+li{
+  line-height: 1.5rem;
+  
 }
 
 form{
@@ -49,5 +65,37 @@ form{
   flex-direction: column;
 }
 
+label{
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+
+input{
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-input);
+  margin-bottom: 1.5rem;
+}
+
+input::placeholder{
+  font-size: 1rem;
+}
+
+button{
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: var(--dark-navy);
+  color: var(--white-text) ;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+button:hover{
+  background-image: linear-gradient(to bottom, #ff527b, #ff556b, #ff5a5c, #ff614b, #ff6a3a);
+  box-shadow: 0px 16px 32px 0px var(--red-glow);
+}
 
 
