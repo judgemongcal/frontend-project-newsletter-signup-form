@@ -17,4 +17,37 @@ dl,
 dd {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  margin: 2rem 1.5rem;
+}
+
+h1{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p{
+  font-size: 1rem;
+}
+
+ul li{
+  padding: 0.3rem;
+  margin-left: -0.5rem;
+  list-style-image: url(assets/images/icon-list.svg);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
