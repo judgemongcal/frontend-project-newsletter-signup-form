@@ -98,4 +98,20 @@ button:hover{
   box-shadow: 0px 16px 32px 0px var(--red-glow);
 }
 
+.success-card{
+  margin: 10rem 2rem;
+  display: none;
+  flex-direction: column;
+}
+
+.success-card img{
+  width: 64px;
+  margin-top: auto;
+  margin-bottom: 2.5rem;
+}
+
+.dismiss-btn {
+  margin-top: 90%;
+}
+
 
