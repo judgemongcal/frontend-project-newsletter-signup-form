@@ -24,6 +24,7 @@ dd {
   --red-glow: rgba(255, 97, 85, 0.5);
   --dark-navy: #242742;
   --white-text: #E7E7E7;
+  --error-text: #FF6155;
 }
 .main-container{
   display: flex;
@@ -63,6 +64,20 @@ li{
 form{
   display: flex;
   flex-direction: column;
+}
+
+.email-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#invalid-msg{
+  font-size: 0.75rem;
+  margin-top: -0.5rem;
+  color: var(--error-text);
+  font-weight: 700;
+  display: none;
 }
 
 label{
