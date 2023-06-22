@@ -25,6 +25,7 @@ dd {
   --dark-navy: #242742;
   --white-text: #E7E7E7;
   --error-text: #FF6155;
+  --dekstop-bg-color: #36384D;
 }
 .main-container{
   display: flex;
@@ -132,6 +133,65 @@ button:hover{
   margin-top: 90%;
 }
 
+/* Desktop View */
 
+@media (min-width: 60rem){
+
+body{
+  background-color: var(--dekstop-bg-color);
+
+}
+
+.main-container{
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: row;
+  max-width: 927px;
+  min-height: 641px;
+  border-radius: 2rem;
+  margin: 16% auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.image{
+  order: 2;
+}
+
+.image img{
+  content: url('../images/illustration-sign-up-desktop.svg');
+
+}
+
+.content{
+  order: 0;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+p{
+  width: 90%;
+}
+
+.success-card{
+  display: hidden;
+  background-color: #ffffff;
+  width: 504px;
+  height: 520px;
+  border-radius: 2rem;
+  justify-content: center;
+  padding: 3rem;
+  margin: auto;
+  margin: 16% auto;
+}
+
+
+.dismiss-btn{
+  margin-top: 2.5rem;
+}
+
+}
 
 
