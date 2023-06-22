@@ -51,7 +51,7 @@ ul{
 
 ul li{
   margin: auto auto 0.625rem -0.5rem ;
-  list-style-image: url('assets/images/icon-list.svg');
+  list-style-image: url('../images/icon-list.svg');
   padding: 0.3rem;
 }
 
@@ -125,8 +125,13 @@ button:hover{
   margin-bottom: 2.5rem;
 }
 
+#email-input{
+  font-weight: 700;
+}
 .dismiss-btn {
   margin-top: 90%;
 }
+
+
 
 
